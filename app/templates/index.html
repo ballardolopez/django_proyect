@@ -9,11 +9,16 @@
     </TITLE>
 </head>
 <body>
+<h1>
+    Mi primera Pagina Web
+</h1>
+{%  block content %}
 <ul>
     {% for category in categorias %}
         <li> {{ category.id }}/{{ category.name }}</li>
     {% endfor %}
 </ul>
+{% endblock %}
 <p>{{ name }}</p>
 </body>
 </html>
