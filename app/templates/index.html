@@ -1,26 +1,5 @@
+{% extends 'body.html' %}
 
-<!DOCTYPE html>
+{% block content %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <TITLE>
-
-    </TITLE>
-</head>
-<body>
-<h1>
-    Mi primera Pagina Web
-</h1>
-{%  block content %}
-<ul>
-    {% for category in categorias %}
-        <li> {{ category.id }}/{{ category.name }}</li>
-    {% endfor %}
-</ul>
 {% endblock %}
-<p>{{ name }}</p>
-</body>
-</html>
-
-<! comentario - - - - -identar control +  alt + l>

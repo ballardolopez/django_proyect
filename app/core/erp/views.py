@@ -15,7 +15,7 @@ def miprimeravista(request):
     'categorias': Category.objects.all()
     }
     #return JsonResponse(data)
-    return render(request, 'index.html', data);
+    return render(request, 'home.html', data);
 
     #return HttpResponse('Este es mi primera url')
 
