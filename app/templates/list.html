@@ -36,7 +36,8 @@
         </div>
     <!--fooooooooooooooooterrr-->
         <div class="card-footer">
-            <button class="btn btn-primary btn-flat">
+           <!--agregamos clase btntest-->
+            <button class="btn btn-primary btn-flat" btnTest>
                 <i class="fas fa-plus"></i> Nuevo registro
             </button>
         </div>
@@ -51,6 +52,24 @@
                 responsive: true,
                 autoWidth: false
             });
+
+                 <!--agregamos clase btntest-->
+            $('.btnTest').on('Click', function  (){
+                     $.alert('x');
+                     $.ajax({
+                         url: '{% url 'erp:category_list' %}',
+                         type: 'POST',
+                         data: {id: 1},
+                         dataType: 'json'
+                     }).done(function (data){
+                            console.log(data)
+                     }).fall(function (jqXHR, textStatus, errorThrown){
+                           alert(textStatus+': '+errorThrown);
+                     }).always(function (data){
+
+                     });;
+            });
         });
+
     </script>
 {% endblock %}

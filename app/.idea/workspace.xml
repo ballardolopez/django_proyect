@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4422b8c-530f-4083-9eae-cf7e6408840b" name="Changes" comment="video 22">
+    <list default="true" id="e4422b8c-530f-4083-9eae-cf7e6408840b" name="Changes" comment="sobreescritura del metodo post">
+      <change afterPath="$PROJECT_DIR$/core/erp/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/erp/templates/category/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/erp/templates/category/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/templates/category/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/erp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/erp/views/category/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/views/category/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/list.html" afterDir="false" />
     </list>
@@ -118,7 +117,7 @@
       <workItem from="1665715239348" duration="4628000" />
       <workItem from="1665796621451" duration="7772000" />
       <workItem from="1665846731397" duration="1393000" />
-      <workItem from="1666422707550" duration="5026000" />
+      <workItem from="1666422707550" duration="7149000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1665035462731</created>
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666424979310</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="sobreescritura del metodo post">
+      <created>1666450347235</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666450347235</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +200,8 @@
     <MESSAGE value="templates temp" />
     <MESSAGE value="plantilla AdminLTE3" />
     <MESSAGE value="video 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="video 22" />
+    <MESSAGE value="sobreescritura del metodo post" />
+    <option name="LAST_COMMIT_MESSAGE" value="sobreescritura del metodo post" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$test.coverage" NAME="test Coverage Results" MODIFIED="1666448087893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/erp" />
