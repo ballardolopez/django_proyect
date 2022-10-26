@@ -1,22 +1,17 @@
+from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
-
-from django.views.decorators.csrf import csrf_exempt
-from django.views.generic import ListView
+from django.urls import reverse_lazy
+from django.views.decorators.csrf import csrf_protect, csrf_exempt
+from django.views.generic import ListView, CreateView, UpdateView
+from django.utils.decorators import method_decorator
 
 from core.erp.forms import CategoryForm
 from core.erp.models import Category
-from django.utils.decorators import method_decorator
-from django.views.generic import ListView, CreateView
-from django.urls import reverse_lazy
-from django.contrib.auth.decorators import login_required
 
 
 def category_list(request):
-    # json
     data = {
-
-        # mandarlo como parametro
         'title': 'Listado de Categorías',
         'categories': Category.objects.all()
     }
@@ -27,26 +22,17 @@ class CategoryListView(ListView):
     model = Category
     template_name = 'category/list.html'
 
-    # @method_decorator(login_required):
-
     @method_decorator(csrf_exempt)
     def dispatch(self, request, *args, **kwargs):
-        # if request.method == 'GET':
-        # llamar el metodo redirect, redireccionar
-        #    return redirect('erp:category_list2')
         return super().dispatch(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
-        # data = {'name': 'Edin'}
         data = {}
-        print(request.POST)
         try:
             data = Category.objects.get(pk=request.POST['id']).toJSON()
         except Exception as e:
             data['error'] = str(e)
         return JsonResponse(data)
-
-    # opost y get
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -61,48 +47,67 @@ class CategoryCreateView(CreateView):
     model = Category
     form_class = CategoryForm
     template_name = 'category/create.html'
-    success_url = reverse_lazy('erp:category_list')  # redireccionar de forma automatica
+    success_url = reverse_lazy('erp:category_list')
 
     def post(self, request, *args, **kwargs):
-
         data = {}
-        # print(request.POST)
         try:
             action = request.POST['action']
-            if (action == 'add'):
+            if action == 'add':
                 form = self.get_form()
-                if form.is_valid():
-                    form.save()
-                else:
-
-                    data = form.errors
+                data = form.save()
             else:
-                data['error'] = "no se ha ingresado opcion"
-        # data = Category.objects.get(pk=request.POST['id']).toJSON()
-
+                data['error'] = 'No ha ingresado a ninguna opción'
         except Exception as e:
             data['error'] = str(e)
-
         return JsonResponse(data)
 
+    #     print(request.POST)
+    #     form = CategoryForm(request.POST)
+    #     if form.is_valid():
+    #         form.save()
+    #         return HttpResponseRedirect(self.success_url)
+    #     self.object = None
+    #     context = self.get_context_data(**kwargs)
+    #     context['form'] = form
+    #     return render(request, self.template_name, context)
 
-#   print(request.POST)
-#  form = CategoryForm(request.POST)
-# if form.is_valid():
-#    form.save()
-#   return HttpResponseRedirect(self.success_url)
-# self.object = None
-# context = self, get_context_data(**kwargs)
-# context['form'] = form
-# return render(request, self.template_name, context)
-
-# print(form.errors)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Creación una Categoria'
+        context['entity'] = 'Categorias'
+        context['list_url'] = reverse_lazy('erp:category_list')
+        context['action'] = 'add'
+        return context
 
 
-def get_context_data(self, **kwargs):
-    context = super().get_context_data(**kwargs)
-    context['title'] = 'Crear Categoria'
-    context['entity'] = 'Categorias'
-    context['list_url'] = reverse_lazy('erp:category_list')
-    context['action'] = 'add'
-    return context
+class CategoryUpdateView(UpdateView):
+    model = Category
+    form_class = CategoryForm
+    template_name = 'category/create.html'
+    success_url = reverse_lazy('erp:category_list')
+
+    def dispatch(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        return super().dispatch(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        data = {}
+        try:
+            action = request.POST['action']
+            if action == 'edit':
+                form = self.get_form()
+                data = form.save()
+            else:
+                data['error'] = 'No ha ingresado a ninguna opción'
+        except Exception as e:
+            data['error'] = str(e)
+        return JsonResponse(data)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Edición una Categoria'
+        context['entity'] = 'Categorias'
+        context['list_url'] = reverse_lazy('erp:category_list')
+        context['action'] = 'edit'
+        return context
