@@ -6,8 +6,9 @@ function message_error(obj) {
             html += '<li>' + key + ': ' + value + '</li>';
         });
         html += '</ul>';
-    } else {
-        html = '<p>' + obj + '</p>';
+    }
+    else{
+        html = '<p>'+obj+'</p>';
     }
     Swal.fire({
         title: 'Error!',
