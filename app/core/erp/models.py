@@ -6,6 +6,7 @@ from core.erp.choices import gender_choices
 
 class Category(models.Model):
     name = models.CharField(max_length=150, verbose_name='Nombre', unique=True)
+    desc = models.CharField(max_length=150, null=True, verbose_name='Descripcion')
 
     def __str__(self):
         #modelo to.string

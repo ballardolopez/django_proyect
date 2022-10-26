@@ -13,9 +13,11 @@ class CategoryForm(ModelForm):
 
     class Meta:
         model = Category
+        # llamar a todos, si fuese por 1 seria en llaves
         fields = '__all__'
         widgets = {
             'name': TextInput(
+                # atributos
                 attrs={
                     'placeholder': 'Ingrese un nombre',
                 }
