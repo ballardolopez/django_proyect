@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4422b8c-530f-4083-9eae-cf7e6408840b" name="Changes" comment="correccion video 35">
+    <list default="true" id="e4422b8c-530f-4083-9eae-cf7e6408840b" name="Changes" comment="correccion video 35 nuevo">
+      <change afterPath="$PROJECT_DIR$/core/erp/views/dashboard/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/login/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/login/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/login/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/login/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/login/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/login/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/login/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/login/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/login/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/views/category/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/views/category/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/homepage/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/homepage/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/bootstrap-4.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/bootstrap-4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/bootstrap-4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/bootstrap-4.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/sweetalert2.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/sweetalert2.all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/sweetalert2.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/sweetalert2.all.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/sweetalert2.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/sweetalert2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/sweetalert2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/lib/sweetalert2-9.10.0/sweetalert2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/hzt/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hzt/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vtc/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vtc/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +65,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Curso Django/proyecto/app/config/settings.py",
+    "last_opened_file_path": "C:/Curso Django/proyecto/app/core/erp",
     "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Curso Django\proyecto\app\static" />
       <recent name="C:\Curso Django\proyecto\app\core\erp" />
-      <recent name="C:\Curso Django\proyecto\app" />
       <recent name="C:\Curso Django\proyecto\app\core" />
+      <recent name="C:\Curso Django\proyecto\app" />
+      <recent name="C:\Curso Django\proyecto\app\static" />
       <recent name="C:\Curso Django\proyecto\app\static\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -125,7 +153,7 @@
       <workItem from="1666670027080" duration="7644000" />
       <workItem from="1666724460193" duration="1965000" />
       <workItem from="1666741729293" duration="11530000" />
-      <workItem from="1666758563834" duration="12242000" />
+      <workItem from="1666758563834" duration="13741000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1665035462731</created>
@@ -260,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666840901261</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="correccion video 35 nuevo">
+      <created>1666884916387</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666884916390</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +360,8 @@
     <MESSAGE value="COMIT ELIMINAR REGISTROS" />
     <MESSAGE value="errores video 35" />
     <MESSAGE value="correccion video 35" />
-    <option name="LAST_COMMIT_MESSAGE" value="correccion video 35" />
+    <MESSAGE value="correccion video 35 nuevo" />
+    <option name="LAST_COMMIT_MESSAGE" value="correccion video 35 nuevo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$test.coverage" NAME="test Coverage Results" MODIFIED="1666448087893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/erp" />

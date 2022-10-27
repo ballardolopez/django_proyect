@@ -16,11 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from core.homepage.views import IndexView
-#from core.erp.views import miprimeravista
+
+# from core.erp.views import miprimeravista
 
 urlpatterns = [
+    # path('admin/', admin.site.urls),
+    # configuracion
+    # path('erp/', include('core.erp.urls')),
+    # path('', IndexView.as_view()),
+
+    path('', IndexView.as_view(), name='index'),
+    path('login/', include('core.login.urls')),
     path('admin/', admin.site.urls),
-    #configuracion
     path('erp/', include('core.erp.urls')),
-    path('', IndexView.as_view()),
 ]

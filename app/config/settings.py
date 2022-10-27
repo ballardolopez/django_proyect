@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'widget_tweaks',
     # Apps
     'core.erp',
-    'core.homepage'
+    'core.homepage',
+    'core.login',
 ]
 
 MIDDLEWARE = [
@@ -127,6 +128,14 @@ STATICFILES_DIRS = [
     # 'django.contrib.staticfiles.finders.FileSystemFinder',
     # 'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
+
+
+LOGIN_REDIRECT_URL = '/erp/dashboard/'
+
+LOGOUT_REDIRECT_URL = '/login/'
+
+LOGIN_URL = '/login/'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
