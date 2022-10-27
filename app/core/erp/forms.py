@@ -13,11 +13,9 @@ class CategoryForm(ModelForm):
 
     class Meta:
         model = Category
-        # llamar a todos, si fuese por 1 seria en llaves
         fields = '__all__'
         widgets = {
             'name': TextInput(
-                # atributos
                 attrs={
                     'placeholder': 'Ingrese un nombre',
                 }
@@ -31,15 +29,15 @@ class CategoryForm(ModelForm):
             ),
         }
 
-
-def save(self, commit=True):
-    data = {}
-    form = super()
-    try:
-        if form.is_valid():
-            form.save()
-        else:
-            data['error'] = form.errors
-    except Exception as e:
-        data['error'] = str(e)
-    return data
+    def save(self, commit=True):
+        data = {}
+        form = super()
+        try:
+            if form.is_valid():
+                form.save()
+            else:
+                data['error'] = form.errors
+        except Exception as e:
+            data['error'] = str(e)
+        return data
+    

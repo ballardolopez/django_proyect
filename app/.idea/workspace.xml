@@ -1,17 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4422b8c-530f-4083-9eae-cf7e6408840b" name="Changes" comment="actualizando registro video 31">
-      <change afterPath="$PROJECT_DIR$/core/erp/templates/category/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/erp/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/erp/templates/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/delete.html" afterDir="false" />
+    <list default="true" id="e4422b8c-530f-4083-9eae-cf7e6408840b" name="Changes" comment="COMIT ELIMINAR REGISTROS">
+      <change afterPath="$PROJECT_DIR$/core/erp/static/category/js/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/hero-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio-details-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio-details-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio-details-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio/portfolio-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio/portfolio-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio/portfolio-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio/portfolio-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio/portfolio-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio/portfolio-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio/portfolio-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio/portfolio-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/portfolio/portfolio-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/profile-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/testimonials/testimonials-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/testimonials/testimonials-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/testimonials/testimonials-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/testimonials/testimonials-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/img/testimonials/testimonials-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/aos/aos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/aos/aos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/boxicons/css/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/boxicons/css/boxicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/boxicons/css/boxicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/boxicons/css/transformations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/boxicons/fonts/boxicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/boxicons/fonts/boxicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/boxicons/fonts/boxicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/boxicons/fonts/boxicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/counterup/counterup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/icofont/fonts/icofont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/icofont/fonts/icofont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/icofont/icofont.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/jquery.easing/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/owl.carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/typed.js/typed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/typed.js/typed.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/typed.js/typed.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/venobox/venobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/venobox/venobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/venobox/venobox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/venobox/venobox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/static/vendor/waypoints/jquery.waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/homepage/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/vtc/body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/vtc/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/vtc/sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/homepage/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/choices.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/choices.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/erp/templates/category/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/templates/category/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/templates/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/erp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/erp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/erp/views/category/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/erp/views/category/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/homepage/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/homepage/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/lib/adminlte-3.0.4/plugins/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/lib/adminlte-3.0.4/plugins/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/lib/adminlte-3.0.4/plugins/jquery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/lib/adminlte-3.0.4/plugins/jquery/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/body.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hzt/body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hzt/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/second.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,17 +160,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Curso Django/proyecto/app/static/js",
+    "last_opened_file_path": "C:/Curso Django/proyecto/app/static",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Curso Django\proyecto\app\static\js" />
-      <recent name="C:\Curso Django\proyecto\app\templates" />
-      <recent name="C:\Curso Django\proyecto\app\core\erp\views\category" />
-      <recent name="C:\Curso Django\proyecto\app\core\erp\templates\category" />
-      <recent name="C:\Curso Django\proyecto\app\core\erp\templates" />
+      <recent name="C:\Curso Django\proyecto\app\static" />
+      <recent name="C:\Curso Django\proyecto\app\core\erp" />
+      <recent name="C:\Curso Django\proyecto\app" />
+      <recent name="C:\Curso Django\proyecto\app\core" />
+      <recent name="C:\Curso Django\proyecto\app\static\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Curso Django\proyecto\app\template" />
@@ -133,7 +248,7 @@
       <workItem from="1666670027080" duration="7644000" />
       <workItem from="1666724460193" duration="1965000" />
       <workItem from="1666741729293" duration="11530000" />
-      <workItem from="1666758563834" duration="5219000" />
+      <workItem from="1666758563834" duration="8516000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1665035462731</created>
@@ -233,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666764146332</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="COMIT ELIMINAR REGISTROS">
+      <created>1666766261071</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666766261071</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +387,8 @@
     <MESSAGE value="video 29 errores" />
     <MESSAGE value="video 29 errores libreria" />
     <MESSAGE value="actualizando registro video 31" />
-    <option name="LAST_COMMIT_MESSAGE" value="actualizando registro video 31" />
+    <MESSAGE value="COMIT ELIMINAR REGISTROS" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMIT ELIMINAR REGISTROS" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$test.coverage" NAME="test Coverage Results" MODIFIED="1666448087893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/erp" />
