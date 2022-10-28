@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'core.homepage',
     'core.login',
     'core.user',
+    'core.reports',
 ]
 
 MIDDLEWARE = [
@@ -113,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'es-ec'
+LANGUAGE_CODE = 'es-gt'
 
 TIME_ZONE = 'UTC'
 
@@ -135,7 +136,6 @@ STATICFILES_DIRS = [
     # 'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 
-
 LOGIN_REDIRECT_URL = '/erp/dashboard/'
 
 LOGOUT_REDIRECT_URL = '/login/'
@@ -147,8 +147,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/media/'
 
 AUTH_USER_MODEL = 'user.User'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
