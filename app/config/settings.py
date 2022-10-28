@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'core.erp',
     'core.homepage',
     'core.login',
+    'core.user',
 ]
 
 MIDDLEWARE = [
@@ -88,6 +89,11 @@ DATABASES = db.POSTGRESQL
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
+
+
+
+# Password validation
+# https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -135,6 +141,12 @@ LOGIN_REDIRECT_URL = '/erp/dashboard/'
 LOGOUT_REDIRECT_URL = '/login/'
 
 LOGIN_URL = '/login/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+MEDIA_URL = '/media/'
+
+AUTH_USER_MODEL = 'user.User'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
