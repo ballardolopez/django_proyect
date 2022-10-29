@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
 
 
+
 class IsSuperuserMixin(object):
     def dispatch(self, request, *args, **kwargs):
         if request.user.is_superuser:

@@ -98,9 +98,9 @@ class ClientForm(ModelForm):
                     'placeholder': 'Ingrese sus apellidos',
                 }
             ),
-            'dni': TextInput(
+            'dpi': TextInput(
                 attrs={
-                    'placeholder': 'Ingrese su dni',
+                    'placeholder': 'Ingrese su dpi',
                 }
             ),
             'date_birthday': DateInput(format='%Y-%m-%d',

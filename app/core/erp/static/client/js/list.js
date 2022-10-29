@@ -16,7 +16,7 @@ $(function () {
             {"data": "id"},
             {"data": "names"},
             {"data": "surnames"},
-            {"data": "dni"},
+            {"data": "dpi"},
             {"data": "date_birthday"},
             {"data": "gender.name"},
             {"data": "id"},
