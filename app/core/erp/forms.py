@@ -19,12 +19,12 @@ class CategoryForm(ModelForm):
         widgets = {
             'name': TextInput(
                 attrs={
-                    'placeholder': 'Ingrese un nombre',
+                    'placeholder': 'Ingrese un nombre para la categoria',
                 }
             ),
             'desc': Textarea(
                 attrs={
-                    'placeholder': 'Ingrese un nombre',
+                    'placeholder': 'Ingrese una descripción',
                     'rows': 3,
                     'cols': 3
                 }
@@ -54,8 +54,9 @@ class ProductForm(ModelForm):
         fields = '__all__'
         widgets = {
             'name': TextInput(
+
                 attrs={
-                    'placeholder': 'Ingrese un nombre',
+                    'placeholder': 'Ingrese el nombre del producto',
                 }
             ),
             'cat': Select(
@@ -90,17 +91,17 @@ class ClientForm(ModelForm):
         widgets = {
             'names': TextInput(
                 attrs={
-                    'placeholder': 'Ingrese sus nombres',
+                    'placeholder': 'Ingrese los nombres',
                 }
             ),
             'surnames': TextInput(
                 attrs={
-                    'placeholder': 'Ingrese sus apellidos',
+                    'placeholder': 'Ingrese los apellidos',
                 }
             ),
             'dpi': TextInput(
                 attrs={
-                    'placeholder': 'Ingrese su dpi',
+                    'placeholder': 'Ingrese el No DPI',
                 }
             ),
             'date_birthday': DateInput(format='%Y-%m-%d',
@@ -110,7 +111,7 @@ class ClientForm(ModelForm):
                                        ),
             'address': TextInput(
                 attrs={
-                    'placeholder': 'Ingrese su dirección',
+                    'placeholder': 'Ingrese la dirección',
                 }
             ),
             'gender': Select()
